@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #121214;
+  color: #2b1d1d;
+}
+
+/* ---------- CABEÇALHO ---------- */
+header {
+  background: #121214;
+  color: white;
+  padding: 16px 24px;
+}
+
+.texto{
+  color: white
+}
+.logo {
+  flex:1;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Container principal (coloca a Logo na esquerda e o Menu na direita) */
+.cabecalho {
+  display: flex;
+  align-items: center;            /* Alinha tudo ao centro verticalmente */
+  justify-content: space-between; /* Empurra a logo para a esquerda e o menu para a direita */
+  padding: 20px;
+  color:#121214;
+}
+
+/* Menu (coloca os links lado a lado) */
+.menu {
+  display: flex; /* Este é o flex que falta para meter lado a lado! */
+  justify-content: center;
+  gap: 25px;     /* Cria espaço entre Cardápio, Promoções e Pedido */
+}
+
+/* Estilo opcional para os links */
+.menu a {
+  color: white;
+  text-decoration: none; /* Remove o sublinhado do texto */
+  border: none;          /* Remove bordas */
+  outline: none;         /* Remove o contorno ao clicar */
+}
+.espacador {
+  flex:1;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background: #121214;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;          /* Deixa bem encorpada/negrito pesado */
+  text-transform: uppercase;  /* Garante o texto em maiúsculas */
+  flex-direction: column;
+
+}
+.corburguer{
+  color:#FF5500;
+
+}
+.hero p {
+  margin: 12px 0 20px;
+}
+
+.botao {
+  background: #FF5500;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+/* ---------- CARDÁPIO ---------- */
+.cardapio {
+  padding: 32px 24px;
+}
+
+.cardapio h2,
+.promo h2,
+.pedido h2 {
+  color: #FF5500;
+  margin-bottom: 16px;
+}
+.cardapio h3,
+.promo h3,
+.pedido h3,
+.cardapio p,
+.promo p,
+.cardapio p,
+.preco {
+  color: white
+}
+
+.card {
+  flex:1;
+  background: #18181B;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.lista-cards{
+  display: flex;
+  gap: 18px;
+}
+
+.foto-card {
+  width: 100%;             /* A imagem ocupa toda a largura do card */
+  height: 180px;           /* Altura fixa para todos os cards ficarem do mesmo tamanho */
+  object-fit: cover;       /* Ajusta e corta a imagem sem distorcer ou esticar */
+  border-radius: 8px;      /* Bordas ligeiramente arredondadas */
+  margin-bottom: 12px;     /* Espaço entre a foto e o título do lanche */
+}
+
+.card h3 {
+  margin: 8px 0;
+}
+
+.card .preco {
+  color: #18181B;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ---------- PROMOÇÕES ---------- */
+.promo {
+  background: #121214;
+  padding: 32px 24px;
+  display: flex;
+  gap: 18px;
+  flex-direction: row;
+}
+
+.promo-1, .promo-2 , .promo-3 {
+  background: #FF5500;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 18px;
+}
+.lista-promo{
+  display: flex;
+  gap: 18px;
+}
+
+/* ---------- PEDIDO ---------- */
+.pedido {
+  padding: 32px 24px;
+}
+
+.campo {
+  margin-bottom: 12px;
+}
+
+.campo label {
+  font-weight: bold;
+}
+
+.campo input,
+.campo select {
+  padding: 8px;
+  border: 2px solid #18181B;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* ---------- RODAPÉ ---------- */
+footer {
+  background: #2b1d1d;
+  color: white;
+  padding: 24px;
+  text-align: center;
+}
+
+.redes span {
+  background: #18181B;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 4px;
+}
+
+.campo{
+  color:white;
+}
